@@ -1,0 +1,67 @@
+#
+#
+# things you probably want to change
+#
+#
+
+# no trailing slash
+#url: https://point-theme.netlify.app
+url:
+
+# for header and meta tags
+title: Anvi Joshi
+description: description for search engines and social media cards
+
+# set external to true if linking outside your website
+# for internal, make sure to include preceding slash
+nav-links:
+  - name: Home
+    url: /
+    external: false
+  - name: Resume
+    url: /resume
+    external: false
+  - name: Misc
+    url: /misc
+    external: false
+#  - name: Contact
+#    url: /contact
+#    external: false
+#  - name: Search Engine
+#    url: https://duckduckgo.com
+#    external: true
+
+# for the homepage image + big text next to it
+greeting_image: /assets/IMG_0445.jpg
+# 100-200 characters recommended
+greeting_text: Hi, I’m Anvi, a rising high school senior interested in exploring the applications and social implications of technology across interdisciplinary fields! In my free time, I enjoy experimenting with fruit-based baking recipes and listening to educational podcasts.
+
+# show blog post excerpts on blog page
+show_excerpts: false
+excerpt_word_count: 70
+
+# long date: April 20, 1969
+long_date: false
+# short date: Apr ‘69
+short_date: true
+
+#
+#
+# things you probably don't want to change
+#
+#
+defaults:
+  - # applies the default layout to all files in the project
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  - # sets is_post=true for all blog posts
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
+permalink: /:title # so we have /about instead of /about.html, and /blog-post instead of /2019-11-22-blog-post.html
+sass:
+  style: compressed # compress the CSS file generated from the SCSS styles file
